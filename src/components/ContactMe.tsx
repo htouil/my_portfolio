@@ -28,14 +28,14 @@ const ContactMe = () => {
   };
 
   return (
-    <div id="contact" className="py-10 md:py-14">
-      <div className="m-4 flex flex-col gap-7 rounded-xl bg-slate-950/60 p-5 md:gap-10 lg:mx-10 xl:mx-16 xl:px-14 xl:py-8">
-        <h1 className="self-center bg-gradient-to-r from-zinc-600 via-zinc-400 via-90% to-zinc-300 bg-clip-text text-xl/relaxed font-extrabold tracking-wide text-transparent md:text-3xl/relaxed xl:text-4xl/relaxed">
+    <div id="contact" className="px-3 py-6 sm:px-4 sm:py-10 md:py-14">
+      <div className="mx-auto flex max-w-7xl flex-col gap-7 rounded-xl bg-slate-950/60 p-4 sm:p-6 md:gap-10 lg:px-14 xl:py-8">
+        <h1 className="self-center bg-linear-to-r from-zinc-600 via-zinc-400 via-90% to-zinc-300 bg-clip-text text-xl/relaxed font-extrabold tracking-wide text-transparent md:text-3xl/relaxed xl:text-4xl/relaxed">
           Contact Me
         </h1>
         <form
           onSubmit={contact}
-          className="flex grow flex-col gap-5 px-5 md:gap-7"
+          className="flex grow flex-col gap-5 sm:px-3 md:gap-7 md:px-5"
         >
           <div className="flex w-full flex-col gap-5 md:flex-row">
             <label className="flex w-full flex-col gap-2">
@@ -80,7 +80,7 @@ const ContactMe = () => {
             <textarea
               name="message"
               required
-              className="h-60 resize-none rounded border-2 border-lime-400 px-2 py-1.5 text-slate-300 shadow-[0_0_8px_rgba(0,255,0,0.4),0_0_16px_rgba(0,255,0,0.2)] focus:ring-2 focus:ring-lime-400/70 focus:outline-none"
+              className="h-40 resize-none rounded border-2 border-lime-400 px-2 py-1.5 text-slate-300 shadow-[0_0_8px_rgba(0,255,0,0.4),0_0_16px_rgba(0,255,0,0.2)] focus:ring-2 focus:ring-lime-400/70 focus:outline-none sm:h-52 md:h-60"
             ></textarea>
           </label>
           <button

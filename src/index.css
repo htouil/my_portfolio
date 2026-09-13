@@ -1,5 +1,49 @@
 @import 'tailwindcss';
-@config "../tailwind.config.js";
+@config '../tailwind.config.js';
+
+:root {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  color: #e2e8f0;
+  background: #020617;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #020617;
+  background-image: url('/binary_bg.gif');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+[id] {
+  scroll-margin-top: 5.5rem;
+}
 
 /* body {
   background: url('/binary_bg.gif');

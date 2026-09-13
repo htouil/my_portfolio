@@ -2,21 +2,21 @@
 
 const Profil = () => {
   return (
-    <div id="about" className="py-10 md:py-14">
-      <div className="m-4 flex flex-col rounded-xl bg-slate-950/60 p-3.5 min-[500px]:flex-row sm:p-4 md:p-5 lg:mx-10 lg:px-14 xl:mx-16 xl:px-16 xl:py-8 2xl:px-32 2xl:py-10">
+    <div id="about" className="px-3 py-6 sm:px-4 sm:py-10 md:py-14">
+      <div className="mx-auto flex max-w-7xl flex-col gap-5 rounded-xl bg-slate-950/60 p-4 min-[500px]:flex-row sm:gap-6 sm:p-5 md:gap-8 md:p-8 lg:px-14 xl:px-16 xl:py-8 2xl:px-32 2xl:py-10">
         <img
           src="/hatim_picture.jpg"
           alt="profil_picture"
-          className="w-44 place-self-center-safe rounded-2xl p-2 sm:w-48 md:w-64 2xl:w-72"
+          className="w-52 shrink-0 place-self-center rounded-2xl p-2 min-[500px]:w-56 sm:w-64 md:w-72 2xl:w-96"
         ></img>
-        <div className="flex grow flex-col place-content-center-safe gap-2 text-white min-[500px]:gap-5 md:gap-10">
-          <h1 className="ml-10 self-center bg-gradient-to-r from-zinc-600 via-zinc-400 via-90% to-zinc-300 bg-clip-text text-center text-base/relaxed font-extrabold tracking-wide text-transparent min-[500px]:ml-0 sm:mr-20 md:text-2xl/relaxed lg:mr-32">
+        <div className="flex min-w-0 grow flex-col justify-center gap-5 text-white sm:gap-7 md:gap-10">
+          <h1 className="self-start bg-linear-to-r from-zinc-600 via-zinc-400 via-90% to-zinc-300 bg-clip-text text-center text-base/relaxed font-extrabold tracking-wide text-transparent sm:text-lg/relaxed md:text-2xl/relaxed">
             Hello dear visitor,
-            <span className="ml-14 inline-block min-[500px]:ml-20" />
+            <span className="ml-3 inline-block min-[500px]:ml-8 sm:ml-14" />
             <br />I am Hatim TOUIL
           </h1>
-          <div className="flex w-60 flex-col self-center overflow-hidden rounded-xl border border-[#aca8ac] min-[500px]:ml-5 md:ml-10 md:h-72 md:w-80 md:rounded-3xl 2xl:h-80 2xl:w-92">
-            <div className="flex basis-3/12 rounded-t-xl bg-[#aca8ac] md:basis-1/6">
+          <div className="flex w-full max-w-xl flex-col self-end overflow-hidden rounded-xl border border-[#aca8ac] sm:w-[min(100%,24rem)] md:min-h-72 md:rounded-3xl 2xl:min-h-80">
+            <div className="flex min-h-9 shrink-0 rounded-t-xl bg-[#aca8ac] md:min-h-12">
               <div className="flex basis-3/12 items-center-safe justify-evenly">
                 <img
                   src="/mac_close_btn.png"
@@ -40,17 +40,29 @@ const Profil = () => {
                 </p>
               </div>
             </div>
-            <div className="basis-9/12 bg-[#dabb64] md:basis-5/6">
-              <p className="p-2 indent-8 text-xs text-pretty text-black md:p-3 md:text-sm 2xl:text-[15px]">
-                Hello and Welcome, My name is Hatim TOUIL, a Full-Stack web 
-                developer with strong Front-End expretise in HTML, TypeScript,
-                Tailwind CSS and ReactJs, honed through the rigorous Common Core at
-                1337 Coding School, currently expanding Back-End skills with NodeJs, 
-                Fastify and MySQL.
+            <div className="bg-[#dabb64]">
+              <p className="p-3 text-[11px] leading-relaxed text-black min-[500px]:text-xs md:p-4 md:text-sm 2xl:text-[15px]">
+                Hello and welcome! I'm Hatim TOUIL, a Full-Stack Developer
+                passionate about building modern, reliable, and scalable web
+                applications.
                 <br />
-                I'm passionate about crafting, not only responsive and
-                user-friendly, but also creative interfaces. My goal is to
-                contribute to innovative projects that make a meaningful impact.
+                My journey started at 1337 Coding School, where I developed a
+                strong foundation in software engineering, system programming,
+                algorithms, and collaborative development. Since then, I've
+                built experience across the stack, working with React, Next.js,
+                TypeScript, Node.js, NestJS, Fastify, PostgreSQL, Prisma,
+                Docker, and more.
+                <br />
+                Most recently, I completed an internship at Devoteam Cyber
+                Trust, where I contributed to a Cyber Threat Intelligence
+                platform using technologies such as Next.js, NestJS, PostgreSQL,
+                Elasticsearch, RabbitMQ, and Apache Airflow. This experience
+                strengthened my full-stack development skills while introducing
+                me to cybersecurity, distributed systems, and
+                infrastructure-oriented engineering.
+                <br />I enjoy turning ideas into intuitive, creative, and
+                well-engineered products, and I'm always looking to learn,
+                build, and take on challenging problems.
               </p>
             </div>
           </div>

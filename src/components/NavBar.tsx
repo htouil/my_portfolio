@@ -23,11 +23,11 @@ const NavBar = () => {
       document.removeEventListener('mousedown', turnHidden);
       document.removeEventListener('scroll', turnHidden);
     };
-  });
+  }, [isVisible]);
 
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-    id: string,
+    id: string
   ) => {
     e.preventDefault();
     const element = document.querySelector(id);
@@ -37,9 +37,9 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed inset-x-0 z-10 bg-slate-950 px-4 py-3 shadow-md xl:px-8 2xl:px-14">
-      <div className="mx-auto flex items-center justify-between">
-        <div className="relative grid grid-cols-3 place-items-center gap-1.5 md:gap-2 xl:gap-2.5">
+    <nav className="fixed inset-x-0 top-0 z-10 bg-slate-950 px-4 py-3 shadow-md sm:px-6 xl:px-8 2xl:px-14">
+      <div className="mx-auto flex max-w-400 flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+        <div className="relative grid shrink-0 grid-cols-3 place-items-center gap-3 self-center sm:gap-2 xl:gap-2.5">
           <a
             title="Visit my Linkedin"
             rel="noopener noreferrer"
@@ -102,7 +102,7 @@ const NavBar = () => {
               src="/triangle_icon.png"
               className="size-2.5 place-self-end text-sky-900"
             />
-            <div className="flex h-5.5 w-[72px] translate-x-2 items-center justify-center divide-x-2 divide-sky-900 rounded bg-slate-950 ring-2 ring-sky-900">
+            <div className="flex h-5.5 w-18 translate-x-2 items-center justify-center divide-x-2 divide-sky-900 rounded bg-slate-950 ring-2 ring-sky-900">
               <a
                 href="/CV_Hatim_Touil_EN.pdf"
                 download
@@ -122,7 +122,7 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <ul className="flex space-x-6 text-[10px] font-medium text-slate-300 min-[500px]:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+        <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-[10px] font-medium text-slate-300 min-[500px]:gap-x-6 min-[500px]:text-xs sm:justify-end sm:text-sm md:text-base lg:text-lg xl:text-xl">
           <li>
             <a
               href="#about"

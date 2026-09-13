@@ -10,10 +10,10 @@ import './App.css';
 function App() {
   return (
     <>
-      <header>
+      <header className="h-24 sm:h-14">
         <NavBar />
       </header>
-      <main>
+      <main className="mx-auto w-full max-w-400 overflow-hidden">
         <Profil />
         <CoolSeparator />
         <Skills />
