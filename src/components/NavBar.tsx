@@ -89,10 +89,10 @@ const NavBar = () => {
           <button
             ref={cvBtn}
             title="Download my CV"
-            className="size-4 cursor-pointer content-center rounded bg-slate-300 text-center text-[10px] font-extrabold text-slate-950 hover:bg-slate-600 md:size-5 md:text-sm xl:size-6 xl:text-base"
+            className="flex size-4 cursor-pointer items-center justify-center self-center justify-self-center rounded bg-slate-300 text-center leading-none font-extrabold text-slate-950 hover:bg-slate-600 md:size-5 xl:size-6"
             onClick={() => setIsVisible(!isVisible)}
           >
-            CV
+            <span className="text-[10px] md:text-xs xl:text-base">CV</span>
           </button>
           <div
             ref={cvPopup}

@@ -3,11 +3,11 @@ import SingleProject from './SingleProject';
 const Projects = () => {
   return (
     <div id="projects" className="px-3 py-6 sm:px-4 sm:py-10 md:py-14">
-      <div className="mx-auto flex max-w-[1600px] flex-col gap-7 rounded-xl bg-slate-950/60 px-4 py-5 sm:p-6 md:gap-10 lg:px-12 xl:px-14 xl:py-10">
-        <h1 className="self-center bg-gradient-to-r from-zinc-600 via-zinc-400 via-90% to-zinc-300 bg-clip-text text-xl/relaxed font-extrabold tracking-wide text-transparent md:text-3xl/relaxed xl:text-4xl/relaxed">
+      <div className="mx-auto flex max-w-400 flex-col gap-7 rounded-xl bg-slate-950/60 px-4 py-5 sm:p-6 md:gap-10 lg:px-12 xl:px-14 xl:py-10">
+        <h1 className="self-center text-slate-300 text-xl/relaxed font-extrabold tracking-wide md:text-3xl/relaxed xl:text-4xl/relaxed">
           Projects
         </h1>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-x-8 md:gap-y-8 lg:gap-x-12 lg:gap-y-10 xl:px-2 2xl:gap-x-16 2xl:gap-y-16">
+        <div className="grid grid-cols-1 gap-6 xl:grid-cols-2 sm:gap-x-8 md:gap-y-8 lg:gap-x-12 lg:gap-y-10 xl:px-2 2xl:gap-x-16 2xl:gap-y-16">
           <SingleProject
             title="so_long"
             image="/so_long_cover.png"

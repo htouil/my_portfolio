@@ -3,19 +3,19 @@
 const Profil = () => {
   return (
     <div id="about" className="px-3 py-6 sm:px-4 sm:py-10 md:py-14">
-      <div className="mx-auto flex max-w-7xl flex-col gap-5 rounded-xl bg-slate-950/60 p-4 min-[500px]:flex-row sm:gap-6 sm:p-5 md:gap-8 md:p-8 lg:px-14 xl:px-16 xl:py-8 2xl:px-32 2xl:py-10">
+      <div className="mx-auto flex max-w-7xl flex-col gap-5 rounded-xl bg-slate-950/60 p-4 sm:gap-6 sm:p-5 md:gap-8 md:p-8 lg:px-14 xl:flex-row xl:px-16 xl:py-8 2xl:px-32 2xl:py-10">
         <img
           src="/hatim_picture.jpg"
           alt="profil_picture"
           className="w-52 shrink-0 place-self-center rounded-2xl p-2 min-[500px]:w-56 sm:w-64 md:w-72 2xl:w-96"
         ></img>
         <div className="flex min-w-0 grow flex-col justify-center gap-5 text-white sm:gap-7 md:gap-10">
-          <h1 className="self-start bg-linear-to-r from-zinc-600 via-zinc-400 via-90% to-zinc-300 bg-clip-text text-center text-base/relaxed font-extrabold tracking-wide text-transparent sm:text-lg/relaxed md:text-2xl/relaxed">
+          <h1 className="self-center text-slate-300 text-center text-base/relaxed font-extrabold tracking-wide sm:text-lg/relaxed md:text-2xl/relaxed xl:self-start">
             Hello dear visitor,
             <span className="ml-3 inline-block min-[500px]:ml-8 sm:ml-14" />
             <br />I am Hatim TOUIL
           </h1>
-          <div className="flex w-full max-w-xl flex-col self-end overflow-hidden rounded-xl border border-[#aca8ac] sm:w-[min(100%,24rem)] md:min-h-72 md:rounded-3xl 2xl:min-h-80">
+          <div className="flex w-full max-w-xl flex-col self-center overflow-hidden rounded-xl border border-[#aca8ac] sm:w-[min(100%,24rem)] md:min-h-72 md:rounded-3xl xl:self-end 2xl:min-h-80">
             <div className="flex min-h-9 shrink-0 rounded-t-xl bg-[#aca8ac] md:min-h-12">
               <div className="flex basis-3/12 items-center-safe justify-evenly">
                 <img

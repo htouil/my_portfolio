@@ -30,7 +30,7 @@ const ContactMe = () => {
   return (
     <div id="contact" className="px-3 py-6 sm:px-4 sm:py-10 md:py-14">
       <div className="mx-auto flex max-w-7xl flex-col gap-7 rounded-xl bg-slate-950/60 p-4 sm:p-6 md:gap-10 lg:px-14 xl:py-8">
-        <h1 className="self-center bg-linear-to-r from-zinc-600 via-zinc-400 via-90% to-zinc-300 bg-clip-text text-xl/relaxed font-extrabold tracking-wide text-transparent md:text-3xl/relaxed xl:text-4xl/relaxed">
+        <h1 className="self-center text-slate-300 text-xl/relaxed font-extrabold tracking-wide md:text-3xl/relaxed xl:text-4xl/relaxed">
           Contact Me
         </h1>
         <form

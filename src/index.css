@@ -28,7 +28,7 @@ body {
   background-color: #020617;
   background-image: url('/binary_bg.gif');
   background-attachment: fixed;
-  background-size: cover;
+  background-size: fit;
 }
 
 img {

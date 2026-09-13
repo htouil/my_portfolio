@@ -11,10 +11,16 @@ const skills: Skill[] = [
   { src: '/tailwind_logo.png', name: 'Tailwind CSS' },
   { src: '/typescript_logo.png', name: 'TypeScript' },
   { src: '/react_logo.png', name: 'ReactJS' },
+  { src: '/nextjs_logo.png', name: 'Next.js' },
   { src: '/nodejs_logo.png', name: 'NodeJS' },
   { src: '/fastify_logo.svg', name: 'Fastify' },
   { src: '/expressjs_logo.svg', name: 'ExpressJS' },
+  { src: '/nestjs_logo.svg', name: 'NestJS' },
   { src: '/mysql_logo.png', name: 'MySQL' },
+  { src: '/postgresql_logo.webp', name: 'PostgreSQL' },
+  { src: '/elasticsearch_logo.svg', name: 'Elasticsearch' },
+  { src: '/airflow_logo.png', name: 'Airflow' },
+  { src: '/rabbitmq_logo.svg', name: 'RabbitMQ' },
   { src: '/git_logo.png', name: 'Git' },
   { src: '/docker_logo.png', name: 'Docker' },
   { src: '/bash_logo.png', name: 'Bash' },
@@ -32,14 +38,26 @@ const addPadding = (src: string): string => {
       return 'p-1.5 md:p-2';
     case '/react_logo.png':
       return 'p-1.5';
+    case '/nextjs_logo.png':
+      return 'p-2 md:p-1.5';
     case '/nodejs_logo.png':
       return 'p-2 md:p-1.5';
     case '/fastify_logo.svg':
       return 'p-1 md:p-0';
     case '/expressjs_logo.svg':
       return 'p-2 md:p-1';
+    case '/nestjs_logo.svg':
+      return 'p-1.5 md:p-1';
     case '/mysql_logo.png':
       return 'p-2.5 md:p-1.5';
+    case '/postgresql_logo.webp':
+      return 'p-2';
+    case '/elasticsearch_logo.svg':
+      return 'p-2 md:p-1.5';
+    case '/airflow_logo.png':
+      return 'p-2.5';
+    case '/rabbitmq_logo.svg':
+      return 'p-2.5';
     case '/docker_logo.png':
       return 'p-1 md:p-0';
     case '/bash_logo.png':
@@ -50,20 +68,10 @@ const addPadding = (src: string): string => {
 };
 
 const Marquee = () => {
-  const duplicatedSkills = [
-    ...skills,
-    ...skills,
-    ...skills,
-    ...skills,
-    ...skills,
-    ...skills,
-    ...skills,
-    ...skills,
-    ...skills,
-  ];
+  const duplicatedSkills = [...skills, ...skills];
   return (
     <div className="w-full overflow-hidden rounded-3xl border-t border-b border-sky-600 py-6 shadow-[0_10px_15px_-3px_rgb(0_0_0_/0.1),0_-10px_15px_-3px_rgb(0_0_0_/0.1)] shadow-sky-500/50 sm:py-7 md:rounded-4xl md:py-10">
-      <div className="marquee flex gap-7 md:gap-10">
+      <div className="marquee flex w-max gap-7 md:gap-10">
         {duplicatedSkills.map((skill, index) => (
           <div
             key={`skill-${index}`}
@@ -90,7 +98,7 @@ const Skills = () => {
   return (
     <div id="skills" className="px-3 py-6 sm:px-4 sm:py-10 md:py-14">
       <div className="mx-auto flex max-w-7xl flex-col justify-center gap-7 rounded-xl bg-slate-950/60 p-4 sm:p-7 md:gap-10 md:p-10 lg:px-14 xl:px-16 xl:py-12">
-        <h1 className="self-center bg-linear-to-r from-zinc-600 via-zinc-400 via-90% to-zinc-300 bg-clip-text text-xl/relaxed font-extrabold tracking-wide text-transparent md:text-3xl/relaxed xl:text-4xl/relaxed">
+        <h1 className="self-center text-slate-300 text-xl/relaxed font-extrabold tracking-wide md:text-3xl/relaxed xl:text-4xl/relaxed">
           Skills
         </h1>
         <Marquee />

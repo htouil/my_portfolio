@@ -3,10 +3,17 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-500%);
+    transform: translateX(-50%);
   }
 }
 
 .marquee {
-  animation: marquee 50s linear infinite;
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation-play-state: paused;
+  }
 }
