@@ -44,7 +44,7 @@ const NavBar = () => {
             title="Visit my Linkedin"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/in/hatim-touil-a57744208/"
+            href="https://www.linkedin.com/in/touil-hatim"
           >
             <svg
               className="size-4 cursor-pointer fill-slate-300 hover:fill-slate-600 md:size-5 xl:size-6"
