@@ -44,7 +44,7 @@ const SingleProject = ({ title, image, text }: SingleProjectProps) => {
           alt={`${title}_cover`}
           className={`absolute size-full rounded-b-lg object-cover transition duration-500 ease-in-out group-hover:-translate-y-full ${!ishovered ? '' : '-translate-y-full'}`}
         />
-        <p className="size-full p-3 text-[10px] leading-relaxed text-black sm:text-xs lg:text-sm xl:text-base 2xl:text-xl">
+        <p className="size-full p-3 text-[10px] leading-relaxed whitespace-pre-line text-black sm:text-xs lg:text-sm xl:text-base 2xl:text-xl">
           {text}
         </p>
       </div>
