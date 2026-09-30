@@ -8,7 +8,7 @@ const Projects = () => {
           Projects
         </h1>
         <div className="grid grid-cols-1 gap-6 sm:gap-x-8 md:gap-y-8 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-2 xl:px-2 2xl:gap-x-16 2xl:gap-y-16">
-          <SingleProject
+          {/* <SingleProject
             title="so_long (School Project)"
             image="/so_long_cover.png"
             text='"so_long" is a 2D game developed in C using the MiniLibX graphics
@@ -51,7 +51,7 @@ const Projects = () => {
             understanding and implementing communication protocols,
             client-server architecture, and managing multiple client
             connections.'
-          />
+          /> */}
           <SingleProject
             title="ft_transcendence (School Project)"
             image="/ft_transcendence_cover.png"

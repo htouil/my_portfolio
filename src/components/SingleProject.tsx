@@ -36,15 +36,17 @@ const SingleProject = ({ title, image, text }: SingleProjectProps) => {
       </h2>
       <div
         ref={divToClick}
-        className="group relative h-72 overflow-hidden rounded-b-lg border border-t-gray-400 bg-[#dabb64] min-[500px]:h-64 sm:h-72 md:h-80 xl:h-96"
+        className="group relative h-72 overflow-hidden rounded-b-lg border border-t-gray-400 bg-black min-[500px]:h-64 sm:h-72 md:h-80 xl:h-96"
       >
         <img
           ref={imageToHover}
           src={image}
           alt={`${title}_cover`}
-          className={`absolute size-full rounded-b-lg object-cover transition duration-500 ease-in-out group-hover:-translate-y-full ${!ishovered ? '' : '-translate-y-full'}`}
+          className={`absolute inset-0 z-0 size-full rounded-b-lg object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0 ${ishovered ? 'opacity-0' : 'opacity-100'}`}
         />
-        <p className="size-full p-3 text-[10px] leading-relaxed whitespace-pre-line text-black sm:text-xs lg:text-sm xl:text-base 2xl:text-xl">
+        <p
+          className={`absolute inset-0 z-10 size-full overflow-y-auto p-3 font-['Roboto_Mono'] text-[9px] leading-relaxed whitespace-pre-line text-white transition-opacity duration-500 group-hover:opacity-100 sm:text-[10px] lg:text-xs xl:text-sm 2xl:text-base ${ishovered ? 'opacity-100' : 'opacity-0'}`}
+        >
           {text}
         </p>
       </div>

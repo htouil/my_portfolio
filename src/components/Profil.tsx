@@ -10,7 +10,7 @@ const Profil = () => {
           className="w-52 shrink-0 place-self-center rounded-2xl p-2 min-[500px]:w-56 sm:w-64 md:w-72 2xl:w-96"
         ></img>
         <div className="flex min-w-0 grow flex-col justify-center gap-5 text-white sm:gap-7 md:gap-10">
-          <h1 className="self-center text-slate-300 text-center text-base/relaxed font-extrabold tracking-wide sm:text-lg/relaxed md:text-2xl/relaxed xl:self-start">
+          <h1 className="self-center text-center text-base/relaxed font-extrabold tracking-wide text-slate-300 sm:text-lg/relaxed md:text-2xl/relaxed xl:self-start">
             Hello dear visitor,
             <span className="ml-3 inline-block min-[500px]:ml-8 sm:ml-14" />
             <br />I am Hatim TOUIL
@@ -40,8 +40,8 @@ const Profil = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-[#dabb64]">
-              <p className="p-3 text-[11px] leading-relaxed text-black min-[500px]:text-xs md:p-4 md:text-sm 2xl:text-[15px]">
+            <div className="bg-black">
+              <p className="p-3 font-['Roboto_Mono'] text-[10px] leading-relaxed text-white min-[500px]:text-[11px] md:p-4 md:text-xs 2xl:text-[13px]">
                 Hello and welcome! I'm Hatim TOUIL, a Full-Stack Developer
                 passionate about building modern, reliable, and scalable web
                 applications.

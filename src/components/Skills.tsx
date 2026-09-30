@@ -14,7 +14,7 @@ const skills: Skill[] = [
   { src: '/nextjs_logo.png', name: 'Next.js' },
   { src: '/nodejs_logo.png', name: 'NodeJS' },
   { src: '/fastify_logo.svg', name: 'Fastify' },
-  { src: '/expressjs_logo.svg', name: 'ExpressJS' },
+  // { src: '/expressjs_logo.svg', name: 'ExpressJS' },
   { src: '/nestjs_logo.svg', name: 'NestJS' },
   { src: '/mysql_logo.png', name: 'MySQL' },
   { src: '/postgresql_logo.webp', name: 'PostgreSQL' },
