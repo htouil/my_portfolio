@@ -31,7 +31,7 @@ const SingleProject = ({ title, image, text }: SingleProjectProps) => {
   }, []);
   return (
     <div className="flex w-full min-w-0 flex-col rounded-lg border border-gray-400">
-      <h2 className="rounded-t bg-[#aca8ac] p-1 text-center text-sm text-black sm:text-base md:text-lg xl:text-xl">
+      <h2 className="rounded-t bg-[#aca8ac] p-1 text-center text-sm text-black sm:text-base md:text-lg">
         {title}
       </h2>
       <div
